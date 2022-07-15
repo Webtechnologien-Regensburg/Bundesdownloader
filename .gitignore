@@ -1,0 +1,7 @@
+# Local build
+dist
+node_modules
+.parcel-cache
+
+# Notes
+.notes

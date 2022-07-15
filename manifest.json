@@ -1,0 +1,27 @@
+{
+
+ "manifest_version": 2,
+ "name": "Bundesdownloader",
+ "version": "1.0",
+
+ "description": "Supports downloading and archiving audio records from bundestag.de",
+
+ "icons": {
+   "48": "icons/bundesdownloader-48.png",
+   "96": "icons/bundesdownloader-96.png"
+ },
+
+ "content_scripts": [
+   {
+     "matches": ["*://*.bundestag.de/mediathek*"],
+     "js": ["src/index.js"]
+   }
+ ],
+
+ "browser_specific_settings": {
+  "gecko": {
+    "id": "bundesdownloader@uni-regensburg.de"
+  }
+}
+
+}
